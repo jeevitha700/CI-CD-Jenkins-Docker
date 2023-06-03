@@ -21,7 +21,7 @@ pipeline {
         }
       }
     }
-    stage('email notification'){
+    stage('email notification') {
       steps {
           mail bcc: '', body: '''Hi welcome to jenkins email alerts 
               thanks
