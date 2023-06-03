@@ -20,8 +20,8 @@ pipeline {
           sh 'docker push $DOCKER_BFLASK_IMAGE'
         }
       }
-      stage('email notification'){
-        steps {
+    stage('email notification'){
+      steps {
           mail bcc: '', body: '''Hi welcome to jenkins email alerts 
               thanks
                jeevitha''', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'jeevithals700@gmail.com'
